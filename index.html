@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Syeam Bin Abdullah</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <!-- idea: have a javascript animated loss function converging in the header? :p -->
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="https://media.licdn.com/dms/image/D5603AQGOUdBx0ZiSMQ/profile-displayphoto-shrink_200_200/0/1673603509018?e=1683158400&v=beta&t=FoOvgGMWEbjkyBvd1a_dwhRBBFZSFx3uprcuAQ_PI2c" class="ppic" />
+        </div>
+        <div id="ddesc">
+          <h1>Syeam Bin Abdullah</h1>
+          <h2>Bachelor of Comp. Sci. (Advanced), UoA | AI/ML, Blockchain | github.com/Shr1ftyy</h2>
+          <div id="dico">
+            <a href="https://www.linkedin.com/in/syeam/"><img src="assets/linkedin-svgrepo-com.svg" class="iico"/></a>
+            <a href="https://github.com/shr1ftyy"><img src="assets/cgithub.svg" class="iico"/></a>
+            <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
+          </div>
+          <div id="demail"></div> <!-- will reveal email -->
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="history" class="container">
+
+      <div class="entry row">
+        <div class="timespan">
+          2022 - 2024
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://media.glassdoor.com/sqll/192742/the-university-of-adelaide-squarelogo.png" />
+        </div>
+        <div class="desc">
+          Currently pursuing a Bachelor's in Computer Science (Advanced) and majoring in Artificial Intelligence.
+
+        </div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">
+          2021 - Present
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7873752/programmer-clipart-md.png" />
+        </div>
+        <div class="desc">
+          I developed blockchain smart contracts for various clients such as Sam Forman (from <a href="https://sturdy.finance/">sturdy.finance</a>), <a href="https://reserve.org/">Reserve</a>, and
+<a href="https://github.com/OpenOrg-gg/AmphoraProtocol/pull/6">Amphora</a>. I placed a strong emphasis on writing resource-efficient and readable code, accompanied with perspicuous documentation and rigorous integration and unit testing with detailed profiling to make it easier for other developers to maintain the codebase.
+
+        </div>
+      </div>
+
+    </div>
+
+    <div style="background-color: #212121; padding-top: 1px; margin-top: 10px;">
+      <div id="featured-projects" class="container">
+        <div class="ctitle">Featured Projects</div>
+        <div class="row">
+
+          <div class="card">
+            <a href="https://github.com/Shr1ftyy/alife">
+              <div class="ccimg"><img src="assets/alife.png" /></div>
+            </a>
+            <div class="cdesc">SimpleLife</div>
+            <div class="pdesc">A simulator containing creatures resembling insects which can reproduce, eat, and fight based on sensory inputs. Connects to Redis for data processing and visualization through a React-based frontend.</div> 
+          </div>
+
+          <div class="card">
+            <a href="https://github.com/enicholls77/Project">
+              <div class="ccimg"><img src="https://github.com/enicholls77/Project/raw/main/preview.png" /></div>
+            </a>
+            <div class="cdesc">Simple Idle Miner</div>
+            <div class="pdesc">An idle mining game that lets the player purchase workers and various tools to mine gold. I created it in a team
+              of three that I lead for a University OOP project.</div> 
+          </div>
+
+          <div class="card">
+            <a href="https://github.com/Shr1ftyy/grand-challenges/blob/main/Report-Syeam_Bin_Abdullah.pdf">
+              <div class="ccimg"><img src="assets/stonks.png" /></div>
+            </a>
+            <div class="cdesc">Stock Price Prediction</div>
+            <div class="pdesc"> I developed a GRU-based sentiment analysis model to determine global sentiment about certain stocks by parsing their tweets, and showed that sentiment can be used to predict the direction stocks would move</div> 
+          </div>
+
+          <div class="card">
+            <a href="https://github.com/Shr1ftyy/grand-challenges/blob/main/ML_in_Drug_Dev_FINAL.pdf">
+              <div class="ccimg"><img src="assets/drugs.png" /></div>
+            </a>
+            <div class="cdesc">Drug Discovery with a VAE</div>
+            <div class="pdesc"> I proposed an machine learning-based method for drug discovery for my second research project in COMP
+              SCI 2008. The proposed method relied on a VAE (variational autoencoder). </div> 
+          </div>
+
+          <div class="card">
+            <a href="https://github.com/Shr1ftyy/minimatcher">
+              <div class="ccimg"><img src="https://user-images.githubusercontent.com/49330057/221149625-cccbac6c-20e4-44a9-a931-daef102f9413.png" /></div>
+            </a>
+            <div class="cdesc">minimatcher</div>
+            <div class="pdesc">a tiny, fast, order matching engine written in C++.</div> 
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- attempt hiding from spambots :p -->
+    <script type="text/javascript">
+      var e_is_shown = false;
+      document.getElementById('iemail').addEventListener("click", function(){
+        let demail = document.getElementById('demail');
+        demail.innerHTML = 'syeam.abdullah@gmail.com';
+        demail.style.opacity = e_is_shown ? 0 : 1;
+        e_is_shown = !e_is_shown;
+      })
+    </script>
+  </body>
+</html>
